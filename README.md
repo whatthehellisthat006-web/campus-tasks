@@ -19,10 +19,5 @@ Point prévu : `GET /health`.
 L'architecture initiale est décrite dans `docs/architecture.md`.
 
 ## Support
-Contact : equipe-a@example.invalid
-
-## Support
-Contact : equipe-a@example.invalid
-
-## Support
-Contact : equipe-a@example.invalid
+Contact equipe A : equipe-a@example.invalid
+Contact equipe B : equipe-b@example.invalid
