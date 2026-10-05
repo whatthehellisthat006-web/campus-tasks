@@ -1,4 +1,9 @@
-#!/usr/bin/env bash
+if [[ -n "$(git status --porcelain)" ]]; then
+  echo "[ERREUR] le dépôt contient des modifications non validées" >&2
+  errors=$((errors + 1))
+else
+  echo "[OK] dépôt propre"
+fi#!/usr/bin/env bash
 set -u
 
 errors=0
