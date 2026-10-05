@@ -1,9 +1,4 @@
-if [[ -n "$(git status --porcelain)" ]]; then
-  echo "[ERREUR] le dépôt contient des modifications non validées" >&2
-  errors=$((errors + 1))
-else
-  echo "[OK] dépôt propre"
-fi#!/usr/bin/env bash
+#!/usr/bin/env bash
 set -u
 
 errors=0
@@ -25,6 +20,13 @@ if git ls-files | grep -Eq '(^|/)\.env$'; then
   errors=$((errors + 1))
 else
   echo "[OK] aucun .env suivi"
+fi
+
+if [[ -n "$(git status --porcelain)" ]]; then
+  echo "[ERREUR] le dépôt contient des modifications non validées" >&2
+  errors=$((errors + 1))
+else
+  echo "[OK] dépôt propre"
 fi
 
 if [[ $errors -gt 0 ]]; then
