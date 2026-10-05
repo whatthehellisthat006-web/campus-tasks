@@ -1,3 +1,5 @@
 .env
 *.log
 logs/
+
+# Secrets locaux : ne jamais forcer leur ajout avec git add -f.
