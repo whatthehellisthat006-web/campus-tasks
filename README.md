@@ -23,3 +23,6 @@ Contact : equipe-a@example.invalid
 
 ## Support
 Contact : equipe-a@example.invalid
+
+## Support
+Contact : equipe-a@example.invalid
